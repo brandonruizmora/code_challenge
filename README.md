@@ -8,6 +8,7 @@
 - Express -> Create API
 - Jest -> Unit testing
 - SuperTest -> Testing API
+- EsLint -> Take care of code readability
 
 ### Components design:
 ```mermaid
