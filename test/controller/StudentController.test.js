@@ -6,4 +6,10 @@ describe("StudentService class unit test", () => {
         expect(students.length).toBe(51);
         expect(typeof students).toBe(typeof []);
     });
+    test("Regresa una lista de emails", () => {
+        const students = StudentController.getEmails();
+        expect(typeof students).toBe(typeof []);
+        expect(students.length).toBe(29);
+        expect(students[0]).toMatch(/visualpartnership/);
+    });
 });
