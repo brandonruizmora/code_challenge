@@ -2,7 +2,7 @@
 
 <br>
  
-![image](https://user-images.githubusercontent.com/63265996/166119415-300a6043-ea8f-447e-ad1e-860ea65933aa.png)
+![image](https://user-images.githubusercontent.com/63265996/166120264-ec3e7b2f-6877-4df4-8a5a-5ab12f47eec7.png)
 
 ### Dependencies:
 - Express -> Create API
