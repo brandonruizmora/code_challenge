@@ -16,4 +16,11 @@ describe("Server test suite", () => {
         expect.assertions(2);
         handler();
     });
+    test(" /v1/emails gives list of emails", async () => {
+        const response = await request(app).get("/v1/emails");
+        expect(response.body.emails[0]).toMatch(/visualpartnership/);
+        expect(response.statusCode).toBe(200);
+        expect.assertions(2);
+        handler();
+    });
 });
