@@ -17,7 +17,9 @@ flowchart LR
     direction TB
     subgraph LIB
         direction LR
-        A[Reader] --> B[StudentService] --> C[StudentController]
+        A[Reader] --> C[StudentController]
+        A[Reader] --> B[StudentService]
+        B[StudentService] --> C[StudentController]
     end
     subgraph EXPRESS
         direction TB
