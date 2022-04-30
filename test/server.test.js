@@ -9,4 +9,11 @@ describe("Server test suite", () => {
         expect.assertions(2);
         handler();
     });
+    test(" /v1/students gives list of students", async () => {
+        const response = await request(app).get("/v1/students");
+        expect(response.body.students[0].email).toMatch(/visualpartnership/);
+        expect(response.statusCode).toBe(200);
+        expect.assertions(2);
+        handler();
+    });
 });
