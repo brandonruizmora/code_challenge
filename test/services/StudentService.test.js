@@ -55,7 +55,7 @@ describe("StudentService class unit test", () => {
         }];
         const studentsList = StudentService.getStudentCertifiedList(students);
         expect(studentsList.length).toBe(1);
-        expect(studentsList[0].haveCertification).toBe(true);
-        expect(studentsList[0]).toEqual(students[0]);
+        expect(studentsList[0]).toMatch(/visualpartnership/);
+        expect(studentsList[0]).toBe(students[0].email);
     });
 });
