@@ -23,4 +23,11 @@ describe("Server test suite", () => {
         expect.assertions(2);
         handler();
     });
+    test(" /v1/credits gives list of students with enough credits", async () => {
+        const response = await request(app).get("/v1/credits");
+        expect(response.body.students[0].email).toMatch(/visualpartnership/);
+        expect(response.statusCode).toBe(200);
+        expect.assertions(2);
+        handler();
+    });
 });
